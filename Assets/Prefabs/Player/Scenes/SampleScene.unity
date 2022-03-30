@@ -430,8 +430,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2715026280943260354, guid: 02e641040fb499c49a848e40f535164a, type: 3}
+      propertyPath: m_SkinWidth
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2715026280943260354, guid: 02e641040fb499c49a848e40f535164a, type: 3}
       propertyPath: m_StepOffset
-      value: 3
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2715026280943260354, guid: 02e641040fb499c49a848e40f535164a, type: 3}
+      propertyPath: m_MinMoveDistance
+      value: 0.03
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 02e641040fb499c49a848e40f535164a, type: 3}
