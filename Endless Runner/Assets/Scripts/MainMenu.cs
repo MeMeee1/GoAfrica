@@ -8,6 +8,8 @@ public class MainMenu : MonoBehaviour
     public void PlayGame()
     {
         SceneManager.LoadScene("Level");
+        Time.timeScale = 1;
+        PauseButton.isPaused = false;
     }
 
     public void QuitGame()
