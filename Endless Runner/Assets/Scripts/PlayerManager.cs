@@ -12,12 +12,14 @@ public class PlayerManager : MonoBehaviour
     public GameObject startingText;
 
     public static int numberOfCoins;
+    public static int numberOfVaccines;
     public int timeOfGame;
     public static float timer;
 
     public Text coinsText;
     public Text timeText;
     public Text speedText;
+    public Text vaccineText;
 
     public int speed;
 
@@ -36,6 +38,7 @@ public class PlayerManager : MonoBehaviour
         Time.timeScale = 1;
         isGameStarted = false;
         numberOfCoins = 0;
+        numberOfVaccines = 0;
     }
 
     // Update is called once per frame
@@ -57,6 +60,7 @@ public class PlayerManager : MonoBehaviour
         }
 
         coinsText.text = "Coins: " + numberOfCoins;
+        vaccineText.text = "Vaccines: " + numberOfVaccines;
         timeText.text = "Time: " + FormatTimeText();
         speedText.text = "Speed: " + FormatSpeedText();
 
