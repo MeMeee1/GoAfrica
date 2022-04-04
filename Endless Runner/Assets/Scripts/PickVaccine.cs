@@ -18,11 +18,15 @@ public class PickVaccine : MonoBehaviour
     {
         
     }
-    private void OnCollisionEnter(Collision collision)
+   
+    private void OnTriggerExit(Collider other)
     {
-        if(collision.gameObject.CompareTag("Player"))
+        if(other.tag=="Player")
         {
-            PlayerManager.numberOfVaccines+=1;
+            PlayerManager.numberOfVaccines++;
+            Debug.Log("It worked");
+            Destroy(gameObject);
         }
     }
 }
+
